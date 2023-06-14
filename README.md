@@ -242,3 +242,12 @@ Sec-WebSocket-Protocol: actioncable-v1-json
 > Masking is a security feature that's meant to thwart malicious client-side code from having control over the exact sequence of bytes which appear on the wire. [Section 10.3](https://www.rfc-editor.org/rfc/rfc6455#section-10.3) has more details.
 
 ## HTTP2.0 and beyond
+
+## References & more
+
+* MDN: Writing WebSocket servers - https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers
+* RFC 6455 - The WebSocket Protocol - https://www.rfc-editor.org/rfc/rfc6455
+* websocket-ruby - https://github.com/imanel/websocket-ruby
+* em-websocket - https://github.com/igrigorik/em-websocket
+* Getting Started with Ruby and WebSockets - https://www.engineyard.com/blog/getting-started-with-ruby-and-websockets/
+* Building a simple websockets server from scratch in Ruby - https://www.honeybadger.io/blog/building-a-simple-websockets-server-from-scratch-in-ruby/
