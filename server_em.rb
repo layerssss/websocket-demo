@@ -12,6 +12,13 @@ EventMachine.run do
 
       # Publish message to the client
       ws.send "Hello Client, you connected to #{handshake.path}"
+
+      Thread.new do
+        loop do
+          ws.send('You are still connected')
+          sleep 1
+        end
+      end
     end
 
     ws.onmessage do |message|
@@ -30,5 +37,7 @@ EventMachine.run do
     end
 
     ws.onclose { puts 'Connection closed' }
+
+    # ... [run Sinatra server]
   end
 end
