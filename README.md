@@ -17,7 +17,7 @@ Michael Yin
 * Bytes won’t be missing
 * Bytes are what you get. (No other boundaries except “bytes”)
 
-### HTTP1.0
+### HTTP 1.0
 
 Client connects to server via TCP
 
@@ -44,7 +44,7 @@ Welcome to the <img src="/logo.gif"> example.com homepage!
 
 Server and client close connection when they are "done".
 
-### HTTP1.1
+### HTTP 1.1
 
 Client connects to server via TCP
 
@@ -209,6 +209,8 @@ The other side replies with another **close** frame, then the underlying TCP con
 
 * Extentions: think of an extension as compressing a file before emailing it to someone. 
 * Subprotocols: `Sec-WebSocket-Protocol` header
+
+An example of ActionCable client running on Google Chrome
 
 ```
 GET wss://?????/cable?token=????
